@@ -30,7 +30,7 @@
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.lblAccountName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -80,7 +80,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.lblAccountName);
             this.panel1.Controls.Add(this.label1);
@@ -90,15 +90,15 @@
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button5
+            // btnLogout
             // 
-            this.button5.Location = new System.Drawing.Point(469, 18);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(107, 63);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Logout";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnLogout.Location = new System.Drawing.Point(469, 18);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(107, 63);
+            this.btnLogout.TabIndex = 3;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -432,7 +432,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label lblAccountName;
         private System.Windows.Forms.Label label1;

@@ -54,6 +54,25 @@ namespace TestGUI
 
         private void button5_Click(object sender, EventArgs e)
         {
+
+            logout();
+
+            
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            getTokenValue();
+            lblAccountName.Text = usernameLogin;
+        }
+
+        private void logout()
+        {
             var localString = tokenString;
 
             try
@@ -66,9 +85,9 @@ namespace TestGUI
                     var response = wb.UploadValues(api_logout, "POST", data);
                     var jsonString = Encoding.Default.GetString(response);
 
-                    //MessageBox.Show(jsonString);
-                    var results = JsonConvert.DeserializeObject<dynamic>(jsonString);
-                    usernameLogin = results.PrefixTitle + " " + results.FName + " " + results.LName;
+                    MessageBox.Show(jsonString);
+                    //var results = JsonConvert.DeserializeObject<dynamic>(jsonString);
+                    //usernameLogin = results.PrefixTitle + " " + results.FName + " " + results.LName;
 
                     //MessageBox.Show("json: " + results.FName);
                 }
@@ -78,7 +97,7 @@ namespace TestGUI
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-            
+
             Environment.Exit(1);
             //if (MessageBox.Show("Are you sure want to exit?", "The Title",
             //    MessageBoxButtons.YesNo, MessageBoxIcon.Question,
@@ -99,49 +118,7 @@ namespace TestGUI
             //}
             //Environment.Exit(1);
             //this.Close();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            getTokenValue();
-            lblAccountName.Text = usernameLogin;
-        }
-
-        private void logout()
-        {
             //MessageBox.Show(tokenString);
-            var localString = tokenString;
-
-            try
-            {
-
-                using (var wb = new WebClient())
-                {
-                    var data = new NameValueCollection();
-                    data["token"] = localString;
-
-                    var response = wb.UploadValues(api_logout, "POST", data);
-                    var jsonString = Encoding.Default.GetString(response);
-
-                    //MessageBox.Show(jsonString);
-                    var results = JsonConvert.DeserializeObject<dynamic>(jsonString);
-                    usernameLogin = results.PrefixTitle + " " + results.FName + " " + results.LName;
-
-                    //MessageBox.Show("json: " + results.FName);
-                }
-
-
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Logout Error: " + ex.Message);
-            }
         }
         private void getTokenValue()
         {
