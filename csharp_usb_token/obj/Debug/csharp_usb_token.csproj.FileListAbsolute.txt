@@ -10,3 +10,15 @@ C:\Users\User\Documents\Visual Studio 2015\Projects\csharp_usb_token\csharp_usb_
 C:\Users\User\Documents\Visual Studio 2015\Projects\csharp_usb_token\csharp_usb_token\obj\Debug\csharp_usb_token.csproj.GenerateResource.Cache
 C:\Users\User\Documents\Visual Studio 2015\Projects\csharp_usb_token\csharp_usb_token\obj\Debug\csharp_usb_token.exe
 C:\Users\User\Documents\Visual Studio 2015\Projects\csharp_usb_token\csharp_usb_token\obj\Debug\csharp_usb_token.pdb
+C:\Users\eofficepc-15\Documents\Visual Studio 2015\Projects\csharp_usb_token\csharp_usb_token\bin\Debug\csharp_usb_token.exe.config
+C:\Users\eofficepc-15\Documents\Visual Studio 2015\Projects\csharp_usb_token\csharp_usb_token\obj\Debug\csharp_usb_token.exe
+C:\Users\eofficepc-15\Documents\Visual Studio 2015\Projects\csharp_usb_token\csharp_usb_token\obj\Debug\csharp_usb_token.pdb
+C:\Users\eofficepc-15\Documents\Visual Studio 2015\Projects\csharp_usb_token\csharp_usb_token\bin\Debug\csharp_usb_token.exe
+C:\Users\eofficepc-15\Documents\Visual Studio 2015\Projects\csharp_usb_token\csharp_usb_token\bin\Debug\csharp_usb_token.pdb
+C:\Users\eofficepc-15\Documents\Visual Studio 2015\Projects\csharp_usb_token\csharp_usb_token\bin\Debug\Newtonsoft.Json.dll
+C:\Users\eofficepc-15\Documents\Visual Studio 2015\Projects\csharp_usb_token\csharp_usb_token\bin\Debug\Newtonsoft.Json.xml
+C:\Users\eofficepc-15\Documents\Visual Studio 2015\Projects\csharp_usb_token\csharp_usb_token\obj\Debug\csharp_usb_token.csprojResolveAssemblyReference.cache
+C:\Users\eofficepc-15\Documents\Visual Studio 2015\Projects\csharp_usb_token\csharp_usb_token\obj\Debug\TestGUI.Form1.resources
+C:\Users\eofficepc-15\Documents\Visual Studio 2015\Projects\csharp_usb_token\csharp_usb_token\obj\Debug\TestGUI.LoginForm.resources
+C:\Users\eofficepc-15\Documents\Visual Studio 2015\Projects\csharp_usb_token\csharp_usb_token\obj\Debug\csharp_usb_token.Properties.Resources.resources
+C:\Users\eofficepc-15\Documents\Visual Studio 2015\Projects\csharp_usb_token\csharp_usb_token\obj\Debug\csharp_usb_token.csproj.GenerateResource.Cache

@@ -92,7 +92,6 @@ namespace TestGUI
 
         private void Login()
         {
-
             try
             {
                 string user = UserNameBox1.Text;

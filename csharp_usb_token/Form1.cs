@@ -1,4 +1,5 @@
 ﻿using System;
+
 using System.Collections;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,8 @@ namespace TestGUI
     {
         public string tokenString { get; set; }
         public string usernameLogin { get; set; }
+        public string certificationString { get; set; }
+
         public object loginform = new LoginForm();
 
         //public string api_encode = "http://localhost/tcsd_investigation/api/v1/getuser";
@@ -54,10 +57,7 @@ namespace TestGUI
 
         private void button5_Click(object sender, EventArgs e)
         {
-
-            logout();
-
-            
+            Logout();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -67,11 +67,11 @@ namespace TestGUI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            getTokenValue();
+            GetTokenValue();
             lblAccountName.Text = usernameLogin;
         }
 
-        private void logout()
+        private void Logout()
         {
             var localString = tokenString;
 
@@ -97,7 +97,7 @@ namespace TestGUI
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-
+            this.Close();
             Environment.Exit(1);
             //if (MessageBox.Show("Are you sure want to exit?", "The Title",
             //    MessageBoxButtons.YesNo, MessageBoxIcon.Question,
@@ -120,7 +120,7 @@ namespace TestGUI
             //this.Close();
             //MessageBox.Show(tokenString);
         }
-        private void getTokenValue()
+        private void GetTokenValue()
         {
             //MessageBox.Show(tokenString);
             var localString = tokenString;
@@ -141,7 +141,7 @@ namespace TestGUI
                     var results = JsonConvert.DeserializeObject<dynamic>(jsonString);
                     usernameLogin = results.PrefixTitle + " " + results.FName + " " + results.LName;
 
-                    MessageBox.Show("json: "+results.FName);
+                    //MessageBox.Show("json: "+results.FName);
                 }
 
 
@@ -158,5 +158,12 @@ namespace TestGUI
             
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            csharp_usb_token.Class1 read_token = new csharp_usb_token.Class1();
+            read_token.Main();
+            //certificationString = "Test";
+            MessageBox.Show(certificationString);
+        }
     }
 }
